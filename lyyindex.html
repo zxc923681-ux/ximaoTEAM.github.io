@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <!-- 左侧聊天列表 -->
+    <div class="sidebar">
+        <div class="logo">
+            AI Chat
+        </div>
+        <button id="newChatBtn">
+            + 新聊天
+        </button>
+        <div id="chatList">
+            <div class="chat-item active">
+                新对话
+            </div>
+        </div>
+    </div>
+    <!-- 右侧聊天区域 -->
+    <div class="main">
+        <div class="header">
+            AI Assistant
+        </div>
+        <div id="messages" class="messages">
+            <div class="message ai">
+                <div class="avatar">
+                    🤖
+                </div>
+                <div class="bubble">
+                    你好！我是你的 AI 助手。
+                </div>
+            </div>
+        </div>
+        <div class="input-area">
+            <button id="emojiBtn">
+                😀
+            </button>
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="输入消息..."
+            >
+            <button id="sendBtn">
+                发送
+            </button>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
